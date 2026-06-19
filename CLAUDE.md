@@ -21,4 +21,7 @@
 ## 現在の状態
 
 - [x] 環境構築完了
-- [ ] 開発開始
+- [x] 公開ポートフォリオ初版を実装
+- [x] `repo-ready` を公開実績として掲載
+- [x] responsive layout・metadata・reduced motion 対応
+- [ ] 公開先へのデプロイ
