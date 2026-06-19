@@ -2,6 +2,8 @@
 
 The public portfolio for [officialwhitebird](https://github.com/officialwhitebird): a compact record of open-source work and the systems being explored.
 
+Live site: [officialwhitebird.github.io/my-app](https://officialwhitebird.github.io/my-app/)
+
 ## Stack
 
 - Next.js App Router
@@ -23,6 +25,10 @@ Open [http://localhost:3000](http://localhost:3000).
 npm run lint
 npm run build
 ```
+
+## Deployment
+
+Every push to `main` builds a static export and deploys it to GitHub Pages. The workflow can also be run manually from the Actions tab.
 
 ## Content policy
 

@@ -24,4 +24,4 @@
 - [x] 公開ポートフォリオ初版を実装
 - [x] `repo-ready` を公開実績として掲載
 - [x] responsive layout・metadata・reduced motion 対応
-- [ ] 公開先へのデプロイ
+- [x] GitHub Pages向け静的export・自動デプロイを設定
