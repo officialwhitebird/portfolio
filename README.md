@@ -2,7 +2,7 @@
 
 The public portfolio for [officialwhitebird](https://github.com/officialwhitebird): a compact record of open-source work and the systems being explored.
 
-Live site: [officialwhitebird.github.io/my-app](https://officialwhitebird.github.io/my-app/)
+Live site: [officialwhitebird.github.io/portfolio](https://officialwhitebird.github.io/portfolio/)
 
 ## Stack
 

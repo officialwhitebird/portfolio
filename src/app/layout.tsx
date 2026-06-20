@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://officialwhitebird.github.io/my-app/'),
+  metadataBase: new URL('https://officialwhitebird.github.io/portfolio/'),
   title: 'officialwhitebird — Useful systems, built with intent',
   description:
     'Automation, decision support, and AI orchestration projects built in Japan.',
