@@ -139,10 +139,14 @@ index 7799e9d..1fc2273 100644
 ?? docs/professor_work_instruction_pages_actions_node24_20260621.md
 ?? docs/switchboard_completion_pages_actions_node24_20260621.md
 ```
-※上記以外のファイル変更はありません。また、本ステップにおいて commit、push、Release、workflow dispatch、GitHubリポジトリ設定変更、バックグラウンドプロセスの実行は一切行っていません。
+※上記は初期実装完了時点のcommit前スナップショットです。この時点では上記以外のファイル変更はなく、commit、push、Release、workflow dispatch、GitHubリポジトリ設定変更、バックグラウンドプロセスの実行は行っていません。その後、オーナー承認に基づきcommit `bf7d482` をmainへpushし、以下の本番検証を実施しました。
 
-## 7. 残存する本番検証ゲート (Remaining Live Verification Gate)
-本作業ではコミットおよびリモートへのプッシュを行わないため、本番環境での警告解消の確認は完了していません。オーナーによるコミットおよびメインブランチへのプッシュの承認後、GitHub Actions上で以下の実行結果を確認する必要があります。
-1. 更新された deploy-pages ワークフローがエラーなく正常に完了すること。
-2. GitHub Actionsの実行ログおよびアノテーションから、Node.js 20 deprecation warning が解消されていること。
-3. デプロイ後のGitHub Pagesサイトが正常にアクセス可能（HTTP 200）であること。
+## 7. 本番検証結果 (Live Verification Result)
+2026-06-22（JST）、commit `bf7d482e748f90d5eaba567cf14766fb4971e4ea` に対して本番検証ゲートが通過したことを確認しました。
+
+1. [Verify run 27908371931](https://github.com/officialwhitebird/portfolio/actions/runs/27908371931): `completed / success`
+2. [Deploy portfolio to GitHub Pages run 27908371915](https://github.com/officialwhitebird/portfolio/actions/runs/27908371915): `completed / success`
+3. commitに紐づく`verify`、`build`、`deploy`のCheck Runはいずれも成功し、アノテーションは0件でした。Node.js 20 deprecation warningは検出されませんでした。
+4. デプロイ後の[GitHub Pagesサイト](https://officialwhitebird.github.io/portfolio/)はHTTP 200を返し、正常にアクセスできました。
+
+以上により、残存していた本番検証ゲートはすべて完了しました。Release、workflow dispatch、GitHubリポジトリ設定変更は行っていません。
