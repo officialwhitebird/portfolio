@@ -8,10 +8,23 @@ export const metadata: Metadata = {
     'Automation, decision support, and AI orchestration projects built in Japan.',
   keywords: ['automation', 'AI', 'developer tools', 'open source'],
   authors: [{ name: 'officialwhitebird' }],
+  alternates: {
+    canonical: './',
+  },
   openGraph: {
-    title: 'officialwhitebird',
-    description: 'Useful systems, built with intent.',
+    title: 'officialwhitebird — Useful systems, built with intent',
+    description:
+      'Automation, decision support, and AI orchestration projects built in Japan.',
     type: 'website',
+    url: './',
+    siteName: 'officialwhitebird portfolio',
+    locale: 'ja_JP',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'officialwhitebird — Useful systems, built with intent',
+    description:
+      'Automation, decision support, and AI orchestration projects built in Japan.',
   },
 }
 

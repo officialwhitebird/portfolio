@@ -47,6 +47,7 @@ export default function Home() {
         <div className="nav-cluster">
           <a className="nav-anchor" href="#work">Work</a>
           <a className="nav-anchor" href="#about">About</a>
+          <a className="nav-anchor" href="#contact">Contact</a>
           <a
             className="nav-link"
             href="https://github.com/officialwhitebird"
@@ -238,10 +239,40 @@ export default function Home() {
         </a>
       </section>
 
+      <section className="contact" id="contact">
+        <div>
+          <p className="section-label">06 / Contact</p>
+          <h2>Start with<br /><em>context.</em></h2>
+        </div>
+        <div className="contact-copy">
+          <p>
+            公開プロジェクトへの質問、改善案、協働の相談はGitHub Discussionsへ。
+            目的と背景が分かる短い説明から始めてください。
+          </p>
+          <a
+            className="button primary"
+            href="https://github.com/officialwhitebird/portfolio/discussions/new?category=general"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Start a discussion <ArrowIcon /><span className="sr-only"> (opens in a new tab)</span>
+          </a>
+          <p className="contact-note">
+            公開窓口です。個人情報、認証情報、機密情報、脆弱性の詳細は投稿しないでください。
+            セキュリティ上の問題は
+            <a href="https://github.com/officialwhitebird/portfolio/security/policy" target="_blank" rel="noreferrer">
+              Security Policy<span className="sr-only"> (opens in a new tab)</span>
+            </a>
+            を利用してください。
+          </p>
+        </div>
+      </section>
+
       <footer>
         <a className="brand" href="#top"><span className="brand-mark" aria-hidden="true">W</span><span>officialwhitebird</span></a>
         <p>Designed and built with care in Japan.</p>
         <div className="footer-meta">
+          <a href="https://github.com/officialwhitebird/portfolio/discussions" target="_blank" rel="noreferrer">Discussions<span className="sr-only"> (opens in a new tab)</span></a>
           <a href="https://github.com/officialwhitebird/portfolio/security/policy" target="_blank" rel="noreferrer">Security<span className="sr-only"> (opens in a new tab)</span></a>
           <p>© {new Date().getFullYear()}</p>
         </div>
