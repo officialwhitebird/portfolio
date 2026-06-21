@@ -19,12 +19,21 @@ export const metadata: Metadata = {
     url: './',
     siteName: 'officialwhitebird portfolio',
     locale: 'ja_JP',
+    images: [
+      {
+        url: './og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'officialwhitebird — Useful systems, built with intent. Automation, decision support, and AI orchestration.',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'officialwhitebird — Useful systems, built with intent',
     description:
       'Automation, decision support, and AI orchestration projects built in Japan.',
+    images: ['./og-image.png'],
   },
 }
 
