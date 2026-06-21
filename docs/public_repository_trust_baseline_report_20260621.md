@@ -74,3 +74,21 @@ GitHub API への問い合わせにより、公式リリースが存在するこ
 - Final verdict: `PASS`
 - Verifier independently reran lint、build、repo-ready preflight、`git diff --check`、GitHub Actions tag lookups。
 - Verification artifact: `C:\Users\expex\Projects\switchboard\orchestra\runs\20260621-053630-portfolio-public-repository-trust-baseline\artifacts\verification.md`
+
+## 7. Owner-Gated Settings Follow-up
+
+Date: 2026-06-22
+
+オーナー承認後、初期実装時に分離していたGitHub側の保護設定を確認・適用しました。
+
+- GitHub Private Vulnerability Reporting: enabled
+- `main` branch protection: enabled
+  - Pull Request経由の変更を必須化
+  - required status check `verify`をstrict modeで必須化
+  - administratorsにも保護を適用
+  - stale reviewのdismiss、会話解決、linear historyを必須化
+  - force pushおよびbranch deletionを禁止
+  - 単独運用でロックアウトしないよう、第三者approvalの必須数は0
+- License: 個人の作品、文章、デザインを含むポートフォリオであるため、open-source licenseは付与しない方針を採用し、READMEに明記
+
+Release、Pages publication settings、repository visibilityは変更していません。

@@ -41,3 +41,7 @@ This site links to public repositories only. Private systems are described by ca
 Please refer to the following documents for contributing guidelines and security policies:
 - [CONTRIBUTING.md](CONTRIBUTING.md)
 - [SECURITY.md](SECURITY.md)
+
+## License
+
+This repository is publicly visible for portfolio review, but no open-source license is granted. Unless applicable law permits otherwise, do not copy, modify, distribute, or reuse its code, design, or written content without prior permission.
